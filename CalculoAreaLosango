@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class CalculoAreaLosango {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        // recebe as diagonais maior e menor do losango
+        System.out.print("Digite o valor da diagonal maior: ");
+        double diagonalMaior = input.nextDouble();
+        
+        System.out.print("Digite o valor da diagonal menor: ");
+        double diagonalMenor = input.nextDouble();
+        
+        // calcula a área do losango
+        double area = (diagonalMaior * diagonalMenor) / 2;
+        
+        // exibi a área do losango
+        System.out.println("A área do losango é: " + area);
+        
+        input.close();
+    }
+}
